@@ -32,6 +32,10 @@ btnRemoverAbelha.addEventListener('click', () => {
 
 setInterval(() => {
     for(let abelha of abelhas){
+        if(abelha.baseY > window.innerHeight - 80){
+            abelha.baseY = window.innerHeight - 80;
+        }
+        
         abelha.x += 3;
         abelha.y = abelha.baseY + Math.sin(abelha.x / 30) * 30;
 
