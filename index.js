@@ -32,8 +32,8 @@ btnRemoverAbelha.addEventListener('click', () => {
 
 setInterval(() => {
     for(let abelha of abelhas){
-        abelha.x += 2;
-        abelha.y = abelha.baseY + Math.sin(abelha.x / 20) * 20;
+        abelha.x += 3;
+        abelha.y = abelha.baseY + Math.sin(abelha.x / 30) * 30;
 
         let strPosicao = `translate(${abelha.x}px, ${abelha.y}px)`;
 
