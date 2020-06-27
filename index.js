@@ -6,7 +6,6 @@ class Abelha {
     constructor () {
         this.x = 0;
         this.y = 0;
-        this.baseX = 0;
         this.baseY = Math.random() * window.innerHeight;
 
         this.element = document.createElement('img');
@@ -35,14 +34,14 @@ setInterval(() => {
         if(abelha.baseY > window.innerHeight - 80){
             abelha.baseY = window.innerHeight - 80;
         }
-        
+
         abelha.x += 3;
         abelha.y = abelha.baseY + Math.sin(abelha.x / 30) * 30;
-
+        
         let strPosicao = `translate(${abelha.x}px, ${abelha.y}px)`;
 
         abelha.element.style.transform = strPosicao;
-
+        
         if(abelha.x > window.innerWidth + 50){
             abelha.x = 0;
             abelha.baseY = Math.random() * window.innerHeight;
