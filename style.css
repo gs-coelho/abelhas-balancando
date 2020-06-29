@@ -6,6 +6,7 @@ body {
     background-image: url('assets/flowerFields.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: bottom left;
     overflow: hidden;
 }
 
